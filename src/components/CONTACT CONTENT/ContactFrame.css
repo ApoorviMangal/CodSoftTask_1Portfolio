@@ -1,0 +1,103 @@
+#contact_Page{
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    gap: 40px;
+    min-height: 60vh;
+}
+
+.Contact_left_section{
+    width: 40%;
+    & h3{
+        color: var(--goldenColor);
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    & p{
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        color: var(--goldenColor);
+        & span{
+            color: #fff;
+        }
+    }
+}
+#contact_cntnt{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+.Contact_right_section{
+    width: 60%;
+    /* background-color: green; */
+}
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    & h2{
+        text-align: center;
+        font-size: 1.2rem;
+        color: var(--goldenColor);
+    }
+    .btn{
+        /* width: 6.5rem; */
+        margin: auto;
+        background: transparent;
+        color: #fff;
+        cursor: pointer;
+        transition: .3s ease;
+    }
+    .btn:hover{
+        background-color: var(--goldenColor);;
+        color: #000;
+        border: none;
+    }
+}
+.nameEmailBox{
+    display: flex;
+    gap: 20px;
+}
+.inputFields{
+    width: 20rem;
+    height: 3rem;
+    margin: 20px auto;
+    background: transparent;
+    outline: none;
+    border: 1px solid white;
+    padding: 0 6px;
+    border-radius: 6px;
+    box-shadow: 1px 2px 4px rgba(82, 79, 79, 0.6);
+    color: #fff;
+}
+.messageBox{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    & .txtArea{
+        margin: 4px auto 20px;
+        padding-top: 8px;
+    }
+}
+
+
+@media screen and (max-width: 780px){
+    #contact_Page{
+        flex-direction: column;
+        gap: 10px
+    }
+    .Contact_left_section{
+        width: 100%;
+    }
+    .Contact_right_section{
+        width: 100%;
+    }
+    .nameEmailBox{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .contactForm{
+        gap: 0px;
+    }
+}

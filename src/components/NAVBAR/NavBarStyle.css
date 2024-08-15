@@ -1,0 +1,91 @@
+.navigationBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    /* background-color: aqua; */
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    height: 90px;
+}
+.navigationBg{
+    background-color: #000;
+}
+
+.nav-menu{
+    display: flex;
+}
+
+.nav-menu li{
+    padding: 0 1rem;
+}
+.nav-menu li a{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.nav-menu li a:hover{
+    color: rgb(241, 196, 79);
+}
+
+.logo{
+    font-size: 2.5rem;
+}
+
+.menuBtn{
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 10px 12px;
+    /* border: 1px solid; */
+    border-radius: 50%;
+    box-shadow: 0 1px 6px rgba(177, 174, 174, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.themeBtn{
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 10px 12px;
+    /* border: 1px solid; */
+    border-radius: 50%;
+    box-shadow: 0 1px 6px rgba(177, 174, 174, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 1040px){
+    .nav-menu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        width: 100%;
+        height: 90vh;
+        position: absolute;
+        top: 0;
+        left: 100%;
+        /* background: red; */
+        z-index: -2;
+        transition: .3s linear ;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+
+    .nav-menu li a{
+        font-size: 2.1rem;
+        font-weight: 500;
+    }
+    .menuBtn{
+        display: block;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    }
+}

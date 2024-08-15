@@ -1,0 +1,32 @@
+.pgTtl{
+    width: 100%;
+    height: 40vh;
+    /* background-color: #202020; */
+    position: relative;
+    & div{
+        position: absolute;
+        color: var(--goldenColor);
+        top: 60%;
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%);
+        /* background-color: red; */
+        padding: 6px;
+        & h3{
+            position: relative;
+            cursor: pointer;
+            font-size: 2rem;
+        }
+        & h3::after{
+            content: "";
+            width: 100%;
+            height: 3px;
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            background: #fff;
+            border-radius: 50px;
+        }
+    }
+  
+}
